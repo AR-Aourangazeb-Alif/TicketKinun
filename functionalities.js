@@ -52,6 +52,19 @@ for (let seat of seats) {
             console.log(clickedSeat)
 
 
+        } else {
+
+            if (clickedSeat.includes(seat.innerText)) {
+                seat.style.backgroundColor = "#F7F8F8";
+                seat.style.color = "#03071280";
+                clickedSeat.splice(clickedSeat.indexOf(seat.innerText), 1)
+
+                document.getElementById("seatCounter").innerText = clickedSeat.length;
+                document.getElementById("seat-left").innerText = 40 - clickedSeat.length;
+
+                document.getElementById(seat.innerText).remove();
+            }
+
         }
 
 
@@ -63,6 +76,13 @@ for (let seat of seats) {
             document.getElementById("coupon").removeAttribute("disabled");
             document.getElementById("coupon-button").removeAttribute("disabled");
 
+        }else{
+            document.getElementById("coupon").style.backgroundColor = "#d4d4d400";
+            document.getElementById("coupon-container").style.backgroundColor = "#d4d4d479";
+            document.getElementById("coupon-button").style.backgroundColor = "#1cd10079";
+
+            document.getElementById("coupon").setAttribute("disabled","");
+            document.getElementById("coupon-button").setAttribute("disabled","");
         }
 
 
@@ -70,7 +90,7 @@ for (let seat of seats) {
 
             cellClicked = true;
 
-        }else{
+        } else {
             cellClicked = false;
         }
         if (cellClicked && numberTyped) {
@@ -91,7 +111,7 @@ document.getElementById("phone-number").addEventListener("keyup", function () {
 
     if (document.getElementById("phone-number").value) {
         numberTyped = true;
-    }else{
+    } else {
         numberTyped = false;
     }
     if (cellClicked && numberTyped) {
