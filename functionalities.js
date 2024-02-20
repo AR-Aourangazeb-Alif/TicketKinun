@@ -52,6 +52,7 @@ for (let seat of seats) {
             console.log(clickedSeat)
 
 
+
         } else {
 
             if (clickedSeat.includes(seat.innerText)) {
@@ -83,8 +84,8 @@ for (let seat of seats) {
 
             document.getElementById("coupon").setAttribute("disabled","");
             document.getElementById("coupon-button").setAttribute("disabled","");
+            
         }
-
 
         if (clickedSeat.length >= 1) {
 
@@ -98,6 +99,8 @@ for (let seat of seats) {
 
             document.getElementById("form-button").removeAttribute("disabled");
         }
+
+
 
 
     })
