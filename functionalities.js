@@ -55,7 +55,6 @@ for (let seat of seats) {
         }
 
 
-
         if (clickedSeat.length === 4) {
             document.getElementById("coupon").style.backgroundColor = "white";
             document.getElementById("coupon-container").style.backgroundColor = "white";
@@ -71,6 +70,8 @@ for (let seat of seats) {
 
             cellClicked = true;
 
+        }else{
+            cellClicked = false;
         }
         if (cellClicked && numberTyped) {
             document.getElementById("form-button").style.backgroundColor = "#1DD100";
@@ -80,6 +81,7 @@ for (let seat of seats) {
 
 
     })
+
 }
 
 let count = 0;
@@ -89,6 +91,8 @@ document.getElementById("phone-number").addEventListener("keyup", function () {
 
     if (document.getElementById("phone-number").value) {
         numberTyped = true;
+    }else{
+        numberTyped = false;
     }
     if (cellClicked && numberTyped) {
         document.getElementById("form-button").style.backgroundColor = "#1DD100";
