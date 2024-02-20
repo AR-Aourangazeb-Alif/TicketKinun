@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>P-Paribahan</title>
+
+    <link rel="shortcut icon" href="images/bus-icon.png" type="image/x-icon">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+
+    <header class="flex flex-col items-center gap-8 mx-2 my-4 md:my-12 h-fit">
+
+        <nav class="container flex items-center justify-between">
+            <div class="text-2xl md:text-4xl text-[#030712] font-extrabold">
+                P-Ticket
+            </div>
+            <ul
+                class="md:flex items-center justify-center gap-4 lg:gap-16 flex-1 text-lg text-[#030712B3] font-medium hidden">
+                <li>Home</li>
+                <li>About</li>
+                <li>Destination</li>
+                <li>Search</li>
+            </ul>
+            <div
+                class="flex items-center justify-center gap-2 text-lg md:text-xl font-bold text-[#1DD100] bg-[#1DD1001A] border-solid border-[#1d06] border-[1px] rounded-xl py-[10px] px-[20px] md:py-[16px] md:px-[30px]">
+                Bus
+                <img src="images/bus-icon.png">
+            </div>
+        </nav>
+
+        <section
+            class="container flex items-center flex-col flex-1 rounded-[40px] bg-[url(images/banner.png)] bg-cover bg-no-repeat bg-bottom p-2 pt-4">
+            <div class="flex-1 lg:my-10">
+                <div class="w-fit h-fit text-center flex flex-col items-center gap-8">
+                    <h1 class="font-extrabold text-4xl md:text-5xl lg:text-6xl text-white">End-to-End Travel
+                        with<br><span class="text-[#1DD100]">P Paribahan</span> </h1>
+                    <p class="font-normal text-base md:text-lg w-[60%] text-white">
+                        Let P-Paribahan take you on your next exciting journey. Explore destinations, book your bus tickets instantly, and enjoy a seamless travel experience.
+                    </p>
+
+                    <a href="#buy-tickets">
+                        <button
+                            class="bg-[#1DD100] text-[#030712] font-bold text-lg md:text-xl px-[18px] md:px-[30px] py-[15px] md:py-[21px] rounded-xl">Buy
+                            Tickets</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div
+                class="mt-[48px] lg:mt-0 w-4/5 max-h-[450px] md:h-fit lg:-mb-[6%] grid grid-cols-1 lg:grid-cols-3 grid-rows-3 lg:grid-rows-1 gap-4">
+                <div
+                    class="z-10 bg-white rounded-3xl border-solid border-b-[3px] border-[#1dd100] px-[32px] py-[37px] flex items-center justify-around">
+
+                    <img src="images/people.png" class="object-contain h-full">
+
+                    <div class="w-fit h-full">
+
+                        <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl text-[#030712]">
+                            500K+<br>
+                            <span class="font-normal text-base md:text-lg text-[#03071299]">
+                                Registered users
+                            </span>
+                        </h1>
+                    </div>
+
+                </div>
+
+                <div
+                    class="z-10 bg-white rounded-3xl border-solid border-b-[3px] border-[#1dd100] px-[32px] py-[37px] flex items-center justify-around">
+
+                    <img src="images/ticket-cupon.png" class="object-contain h-full">
+
+                    <div class="w-fit h-full">
+
+                        <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl text-[#030712]">
+                            1.7 lacks<br>
+                            <span class="font-normal text-base md:text-lg text-[#03071299]">
+                                Tickets sold
+                            </span>
+                        </h1>
+                    </div>
+
+                </div>
+
+                <div
+                    class="z-10 bg-white rounded-3xl border-solid border-b-[3px] border-[#1dd100] px-[32px] py-[37px] flex items-center justify-around">
+
+                    <img src="images/stoppage.png" class="object-contain h-full">
+
+                    <div class="w-fit h-full">
+
+                        <h1 class="font-bold text-4xl text-[#030712]">
+                            80K+<br>
+                            <span class="font-normal text-lg text-[#03071299]">
+                                Rental partners
+                            </span>
+                        </h1>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </header>
+
+    <main class="flex flex-col items-center mt-[120px]">
+
+        <section class="container text-center h-fit mx-2 px-4">
+            <h1 class="font-bold text-[40px] mb-[48px]">Best offers for you</h1>
+
+
+            <div class="min-h-[120px] md:min-h-[180px] lg:h-[220px] grid grid-cols-1 lg:grid-cols-2 gap-6 mb-[62px]">
+                <div class="bg-[#FFBF0F] flex rounded-2xl">
+
+                    <div class="h-full w-[52%] flex items-center justify-center">
+
+                        <div class="ml-2">
+                            <p class="text-start">
+                                <span class="font-black text-[30px] md:text-[40px] text-[#030712CC]">15% OFF</span><br>
+
+                                <span class="font-semibold text-lg md:text-xl text-[#030712CC]">on your next
+                                    purchase</span><br>
+
+                                <span class="font-medium text-base md:text-lg text-[#03071280]">use by January
+                                    2024</span>
+                            </p>
+                        </div>
+
+                    </div>
+                    <img src="images/cupon-devider.png" class="h-full">
+                    <div class="h-full flex-1 flex items-center justify-center">
+
+                        <div class="mr-2">
+                            <p>
+                                <span class="font-bold text-[25px] md:text-[32px] text-[#030712]">NEW15</span> <br>
+                                <span class="font-medium text-lg md:text-xl text-[#03071266]">Coupon Code</span>
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="bg-[#F78C9C] flex rounded-2xl">
+
+                    <div class="h-full w-[52%] flex items-center justify-center">
+
+                        <div class="ml-2">
+                            <p class="text-start">
+                                <span class="font-black text-[30px] md:text-[40px] text-[#030712CC]">20% OFF</span><br>
+
+                                <span class="font-semibold text-lg md:text-xl text-[#030712CC]">on your next
+                                    purchase</span><br>
+
+                                <span class="font-medium text-base md:text-lg text-[#03071280]">use by January
+                                    2024</span>
+                            </p>
+                        </div>
+
+                    </div>
+                    <img src="images/cupon-devider.png" class="h-full">
+                    <div class="h-full flex-1 flex items-center justify-center">
+
+                        <div class="mr-2">
+                            <p>
+                                <span class="font-bold text-[25px] md:text-[32px] text-[#030712]">Couple 20</span> <br>
+                                <span class="font-medium text-lg md:text-xl text-[#03071266]">Coupon Code</span>
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <button
+                class="font-bold text-xl text-[#1DD100] border-solid border-[1px] border-[#1DD100] py-[21px] px-[30px] rounded-xl">
+                SeeAll Offers
+            </button>
+
+        </section>
+
+        <div class="mt-[120px] rounded-3xl rounded-b-none bg-[#F7F8F8] border-solid border-t-[#1dd100] border-t-[2px] w-full pt-12 px-2 md:px-4 flex flex-col items-center justify-center pb-28"
+            id="buy-tickets">
+
+            <div class="flex flex-col mx-auto text-center items-center py-12 gap-4">
+                <h1 class="text-[#030712] font-bold text-[40px]">P.H Paribahan</h1>
+                <p class="w-[70%] font-light text-lg">Book Your Buses, Simplified: Effortless ticket booking, comfortable journeys, and the best prices at your fingertips.</p>
+            </div>
+
+
+            <section class="bg-white flex flex-col md:flex-row rounded-2xl container h-fit md:h-[420px]">
+
+                <div class="h-full w-[70%] flex flex-col px-[32px] pt-[40px] pb-[30px] gap-[24px]">
+
+
+                    <div class="h-fit flex flex-col md:flex-row justify-between items-center">
+
+                        <div class="flex items-center gap-4">
+                            <img src="images/bus-logo.png" class="md:h-full">
+
+                            <h1 class="text-[#030712] font-bold text-[32px] leading-8">
+                                Greenline Paribahan <br>
+                                <span class="text-[#03071299] font-normal text-lg">Coach-009-WEB ! AC_Business</span>
+                            </h1>
+                        </div>
+
+                        <div class="flex items-center p-4 md:p-[17px] bg-[#1DD10026] rounded-xl gap-2">
+                            <img src="images/seat-green.png">
+                            <span class="text-[#1DD100] font-medium text-lg"><span id="seat-left"></span> Seats
+                                left</span>
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="h-full grid grid-rows-3 grid-cols-1 bg-[#F7F8F8] rounded-2xl p-4 min-w-[300px]">
+
+                        <div class="flex justify-between items-center border-dashed border-b-[2px] border-[#03071233]">
+
+                            <h1 class="font-semibold text-lg text-[#03071299]">Route</h1>
+                            <h1 class="font-semibold text-lg text-[#030712]">Dhaka - Sylhet</h1>
+
+                        </div>
+
+                        <div class="flex justify-between items-center border-dashed border-b-[2px] border-[#03071233]">
+
+                            <h1 class="font-semibold text-lg text-[#03071299]">Route</h1>
+                            <h1 class="font-semibold text-lg text-[#030712]">Dhaka - Sylhet</h1>
+
+                        </div>
+
+                        <div class="flex flex-col lg:flex-row gap-3 md:gap-0 justify-between py-4">
+
+                            <div class="bg-[#0307120D] flex items-center px-[16px] h-full text-[#030712CC] rounded-xl">
+                                Boarding Point - Laxmipur</div>
+                            <div class="bg-[#0307120D] rounded-xl flex items-center px-[16px] h-full text-[#030712CC]">
+                                Dropping Point - Bogura</div>
+                            <div class="bg-[#0307120D] rounded-xl flex items-center px-[16px] h-full text-[#030712CC]">
+                                Est. Time - 11 Hour</div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+                <img src="images/info-devider.png" class="hidden lg:inline-block lg:h-full">
+
+                <div class="h-full flex-1 flex items-center justify-center">
+
+                    <div class="flex flex-col items-center justify-center gap-5">
+                        <img src="images/fare.png" class="max-w-[60px]">
+                        <h1 class="font-bold text-[32px] text-center leading-[40px]">
+                            550 Taka <br>
+                            <span class="font-semibold text-[24px]">
+                                Per Seat
+                            </span>
+                        </h1>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+            <section
+                class="container bg-white rounded-2xl mt-10 grid grid-cols-1 lg:grid-cols-3 grid-rows-1 py-[32px] px-2">
+
+                <div
+                    class="col-span-2 p-[33px] border-dashed border-b-[3px] lg:border-b-0 lg:border-r-[3px] border-[#0307124D]">
+                    <div>
+
+                        <div
+                            class="font-semibold text-[24px] pb-[20px] border-dashed border-b-[2px] border-[#0307124D]">
+                            Select Your Seat</div>
+
+                        <div
+                            class="flex items-center justify-between text-lg font-medium py-[20px] border-dashed border-b-[2px] border-[#0307124D]">
+
+                            <div class="flex items-center text-[#03071280] gap-1">
+                                <img src="images/seat-gray.png">
+                                Available
+                            </div>
+
+                            <div class="flex items-center text-[#1DD100] gap-1">
+                                <img src="images/seat-green-filled.png">
+                                Selected
+                            </div>
+
+                        </div>
+
+                        <div class="flex flex-row-reverse pt-[23px] pb-4 cursor-pointer">
+
+
+                            <span
+                                class="material-symbols-outlined text-[#030712B3] text-3xl py-3 w-[20%] bg-[#0307121A] rounded-lg flex items-center justify-center">
+                                search_hands_free
+                            </span>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="grid grid-cols-11 h-10 min-h-[670px]">
+
+                        <div class="grid grid-cols-1 grid-rows-10 gap-4" id="row-id">
+
+                        </div>
+
+                        <div class="col-span-10 grid grid-cols-2 gap-8">
+                            <div class="grid grid-cols-2 grid-rows-10 gap-4" id="sit-1">
+
+                            </div>
+                            <div class="grid grid-cols-2 grid-rows-10 gap-4" id="sit-2">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="flex flex-col justify-between">
+
+
+
+                    <div class="p-[33px]">
+
+                        <div
+                            class="font-semibold text-[24px] pb-[20px] border-dashed border-b-[2px] border-[#0307124D]">
+                            Select Your Seat</div>
+
+
+                        <div class="mt-4 w-full p-[32px] bg-[#F7F8F8] rounded-xl">
+
+                            <div
+                                class="grid grid-cols-3 pb-[16px] border-dashed border-b-[2px] border-[#03071233] text-[#030712] font-medium">
+                                <div>
+                                    Seat<span class="ml-1 text-[12px] text-white bg-[#1DD100] px-2 rounded-full"
+                                        id="seatCounter"></span>
+                                </div>
+                                <div class="flex justify-center">Class</div>
+                                <div class="flex flex-row-reverse">Price</div>
+                            </div>
+
+                            <div class="py-[16px] gap-[16px] text-[#03071299] border-[#03071233] border-solid border-b-[1px]"
+                                id="selected-seat-list">
+
+                            </div>
+
+                            <div class="flex items-center justify-between font-medium text-base py-[16px]"
+                                id="total-price-container">
+                                <div>
+                                    Total Price
+                                </div>
+
+                                <div>
+                                    BDT <span id="total-price"></span>
+                                </div>
+                            </div>
+
+                            <div class="flex w-full h-auto bg-gray-300 justify-between items-center rounded-xl p-[8px]"
+                                id="coupon-container">
+
+                                <input type="text" name="coupon" id="coupon" class="outline-none w-4/5 bg-gray-300"
+                                    placeholder="Have any copupon?" disabled>
+
+                                <button
+                                    class="bg-[#1cd10079] text-white font-semibold text-sm md:text-base py-[8px] md:py-[10px] px-[15px] md:px-[17px] rounded-xl"
+                                    id="coupon-button" disabled>Apply</button>
+
+                            </div>
+                            <span id="cupon-check-alert" class="text-red-600 mt-1"></span>
+
+                            <div class="font-medium text-base flex items-center justify-between pt-[24px]">
+                                <div>Grand Total</div>
+                                <div>BDT <span id="grand-total"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="grid grid-rows-4 w-full flex-1 gap-4 px-4 max-h-[400px]">
+
+                        <div class="flex flex-col text-[#030712] font-semibold">Passenger Name* <span id="name-restriction"></span>
+                            <input type="text"
+                                class="w-full flex-1 border-solid border-[2px] border-[#0307121A] outline-none p-4 rounded-xl"
+                                placeholder="Enter your name" id="name" required>
+                        </div>
+
+
+                        <div class="flex flex-col text-[#030712] font-semibold">Phone Number*
+                            <input type="number"
+                                class="w-full flex-1 border-solid border-[2px] border-[#0307121A] outline-none p-4 rounded-xl"
+                                id="phone-number" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <div class="flex flex-col text-[#030712] font-semibold">Email ID
+                            <input type="email"
+                                class="w-full flex-1 border-solid border-[2px] border-[#0307121A] outline-none p-4 rounded-xl"
+                                placeholder="Enter your email id" id="email">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <a href="#nex-pressed" class="h-4/5">
+                                <button type="submit"
+                                    class="w-full h-full rounded-xl font-extrabold text-xl text-white bg-[#1DD10079]"
+                                    disabled id="form-button">Next</button>
+                            </a>
+                        </div>
+
+                        <div class="flex justify-between text-[#03071299]">
+                            <a href="">Terms and Conditions</a>
+                            <a href="">Cancellation Policy</a>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </section>
+
+            <div class="h-[95svh] w-[95vw] hidden items-center justify-center" id="nex-pressed">
+
+                <div class="card w-full md:w-3/4 lg:w-1/2 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/success.png" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">SUCCESS</h2>
+                        <div class="text-xl font-medium text-[#4A4A4A]">
+                            Thank you for Booking Our Bus Seats.
+                            We are working hard to find the best service and deals for you. <br>
+                            <span class="font-light">
+                                Shortly you will find a confirmation in your email.
+                            </span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary bg-[#27AE60] border-none text-white"
+                                id="continue-button">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+
+    </main>
+
+    <script src="sitSet.js"></script>
+</body>
+
+
+<footer class="h-[100svh] md:h-[60svh] w-full bg-[#030712] flex items-center justify-center text-white">
+    <div class="w-[90%] h-[70%] flex flex-col">
+        <div class="flex flex-col md:flex-row w-full items-center justify-between border-dashed border-b-[1.5px] pb-8 mb-8 md:pb-0 md:mb-0">
+
+            <div class="flex flex-col gap-8 py-8">
+                <h1 class="font-extrabold text-[36px]">P-Ticket</h1>
+                <p class="font-light text-lg w-[70%]">P-Ticket is a digital platform to make your daily commuting better.</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center lg:items-end gap-4">
+                <h1 class="font-semibold text-xl">Download our app</h1>
+
+                <img src="images/playstore.png" class="w-[40%] md:w-[20%]">
+
+            </div>
+        </div>
+
+        <div class="flex-1 flex flex-col md:flex-row items-center justify-between gap-8">
+
+            <div class="text-base font-light">
+                @all rights reserved, P-Ticket services limited.2024
+            </div>
+            
+            <div class="flex items-center gap-6 text-white text-base font-medium">
+
+                <p>Terms & condition</p>
+                <p>Return & refund policy</p>
+                <p>Privacy policy</p>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="functionalities.js"></script>
+
+</html>
