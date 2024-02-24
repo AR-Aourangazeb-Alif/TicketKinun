@@ -64,6 +64,7 @@ for (let seat of seats) {
                 document.getElementById("seat-left").innerText = 40 - clickedSeat.length;
 
                 document.getElementById(seat.innerText).remove();
+                
             }
 
         }
@@ -91,7 +92,7 @@ for (let seat of seats) {
 
             cellClicked = true;
 
-        } else {
+        } else{
             cellClicked = false;
         }
         if (cellClicked && numberTyped) {
@@ -167,7 +168,6 @@ document.getElementById("coupon-button").addEventListener("click", function () {
 
 
 document.getElementById("form-button").addEventListener("click", function () {
-    const name = document.getElementById("name").value;
     const phoneNumber = document.getElementById("phone-number").value;
 
 
